@@ -21,6 +21,9 @@ function displayDateTime() {
 function changeCity(event) {
 
     let cityValue = event.target.value;
+    if (cityValue === 'currentLocation') {
+        cityValue = moment.tz.guess();
+    }
     if (cityValue.length !==0) {
     let citiesElement = document.querySelector('.cities');
     
@@ -35,6 +38,7 @@ function changeCity(event) {
         <div class="time">${cityTime}</div>
     </div>`;
     }
+    
 }
 
 
