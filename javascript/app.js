@@ -36,7 +36,8 @@ function changeCity(event) {
         <div class="date">${cityDate}</div>
         </div>
         <div class="time">${cityTime}</div>
-    </div>`;
+    </div> 
+    <a class="homepageLink" href='index.html'>Homepage</a>`;
     }
     
 }
