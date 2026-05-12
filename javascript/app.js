@@ -15,6 +15,15 @@ function displayDateTime() {
         let honoluluTimeElement = honoluluCityElement.querySelector('.time');
         honoluluDateElement.innerHTML=moment.tz('Pacific/Honolulu').format('MMMM Do YYYY');
         honoluluTimeElement.innerHTML=moment.tz('Pacific/Honolulu').format('hh:mm:ss [<small>]A[</small>]');
+
+    }
+
+    let niceCityElement = document.querySelector('#nice');
+    if(niceCityElement) {
+        let niceDateElement = niceCityElement.querySelector('.date');
+        let niceTimeElement = niceCityElement.querySelector('.time');
+        niceDateElement.innerHTML=moment.tz('Europe/Paris').format('MMMM Do YYYY');
+        niceTimeElement.innerHTML=moment.tz('Europe/Paris').format('hh:mm:ss [<small>]A[</small>]');
     }
 }
 
